@@ -26,8 +26,9 @@ def custom():
      l=input("enter the lastname:")
      a=input("enter favorite color:")
      s=input("enter the symbols:")
+     nu=input("enter the number:")
      pet=input("enter your pet's name:")
-     return(l+n+a+s+pet)
+     return(l+n+a+s+pet+nu)
 if i=='p':
       passw()
 elif i=='s':
