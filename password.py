@@ -29,6 +29,14 @@ def custom():
      nu=input("enter the number:")
      pet=input("enter your pet's name:")
      return(l+n+a+s+pet+nu)
+def check_password_strength(password):
+    score = 0
+    if len(password) >= 8: score += 1
+    if any(c.isupper() for c in password): score += 1
+    if any(c.islower() for c in password): score += 1
+    if any(c.isdigit() for c in password): score += 1
+    if any(c in "!@#$%^&*()_+" for c in password): score += 1
+    return score
 if i=='p':
       passw()
 elif i=='s':
